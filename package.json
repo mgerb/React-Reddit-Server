@@ -1,0 +1,13 @@
+{
+  "name": "react-reddit-server",
+  "scripts": {
+    "serve": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "goapp deploy --application react-reddit --version v1"
+  },
+  "author": "Mitchell Gerber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mgerb/react-reddit/issues"
+  },
+  "homepage": "https://reactreddit.com"
+}

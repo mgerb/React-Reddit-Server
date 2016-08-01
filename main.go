@@ -6,11 +6,10 @@ import (
 )
 
 func init() {
-	r := httprouter.New()
-	r.ServeFiles("/*filepath", http.Dir("./dist/"))
-	r.NotFound = http.HandlerFunc(fileHandler("./dist/index.html"))
-
-	http.Handle("/", r)
+	router := httprouter.New()
+	router.ServeFiles("/dist/*filepath", http.Dir("./dist/"))
+	router.NotFound = http.HandlerFunc(fileHandler("./dist/index.html"))
+	http.Handle("/", router)
 }
 
 func fileHandler(path string) http.HandlerFunc {
