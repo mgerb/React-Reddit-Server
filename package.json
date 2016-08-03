@@ -5,7 +5,7 @@
     "deploy": "goapp deploy --application react-reddit --version v1"
   },
   "author": "Mitchell Gerber",
-  "license": "MIT",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/mgerb/react-reddit/issues"
   },
