@@ -3,7 +3,8 @@
   "scripts": {
     "serve": "echo \"Error: no test specified\" && exit 1",
     "deploy": "goapp deploy --application react-reddit --version v1",
-	"snapshot": "git add -A & git commit -m \"snapshot\" & git push origin master"
+	"snapshot": "git add -A & git commit -m \"snapshot\" & git push origin master",
+	"publish": "npm run snapshot & npm run deploy"
   },
   "author": "Mitchell Gerber",
   "license": "GNU",
