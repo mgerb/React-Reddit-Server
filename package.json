@@ -2,7 +2,8 @@
   "name": "react-reddit-server",
   "scripts": {
     "serve": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "goapp deploy --application react-reddit --version v1"
+    "deploy": "goapp deploy --application react-reddit --version v1",
+	"snapshot": "git add -A & git commit -m \"snapshot\" & git push origin master"
   },
   "author": "Mitchell Gerber",
   "license": "GNU",
